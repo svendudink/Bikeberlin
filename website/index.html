@@ -5,18 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groningen Explorer</title>
+    <meta name="description" content="Discover the best of Groningen with guides on landmarks, gaming history, nightlife and more." />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">Groningen Explorer</div>
-        <nav>
+        <button id="menu-toggle" aria-label="Open Menu">☰</button>
+        <nav id="main-nav" class="hidden">
             <a href="#landmarks">Landmarks</a>
             <a href="#gaming">Gaming History</a>
             <a href="#nightlife">Nightlife</a>
+            <a href="#history">History</a>
+            <a href="#bikepaths">Bike Paths</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
+        <section id="hero" class="hero">
+            <h1>Welcome to Groningen Explorer</h1>
+            <p>Your one-stop guide to the vibrant Dutch city known for its rich history and lively culture.</p>
+        </section>
         <section id="landmarks">
             <h1>Discover Groningen</h1>
             <p>Explore famous sites like the Martini Tower, Ureborg, Stadsschouwburg, Forum, and the Groningen Museum. Don't miss Nisperland 17.</p>
@@ -29,6 +38,21 @@
         <section id="nightlife">
             <h2>Nightlife in Groningen</h2>
             <p>Discover the vibrant nightlife scene and visit local favorites like Cafeteria Stoepje.</p>
+        </section>
+
+        <section id="history">
+            <h2>The City's History</h2>
+            <p>From medieval origins to modern innovations, Groningen has always played a pivotal role in the Netherlands.</p>
+        </section>
+
+        <section id="bikepaths">
+            <h2>Best Bike Paths</h2>
+            <p>Cycle like a local using our curated maps of scenic routes and urban shortcuts.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Questions about Groningen? <a href="mailto:info@groningen-explorer.example">Email us</a> and we'll get back to you.</p>
         </section>
     </main>
     <footer>
