@@ -12,6 +12,21 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 600px) {
+    #menu-toggle {
+        display: block;
+    }
+    #main-nav {
+        flex-direction: column;
+        background-color: #232f3e;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #main-nav a {
+        margin: 10px 0;
+    }
+}
 header .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -25,6 +40,18 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+}
+
+#main-nav.hidden {
+    display: none;
+}
 main {
     max-width: 900px;
     margin: 20px auto;
@@ -34,6 +61,15 @@ main {
 }
 section {
     margin-bottom: 30px;
+}
+
+.hero {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/95/Groningen_skyline.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
 }
 footer {
     text-align: center;
